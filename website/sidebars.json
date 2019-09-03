@@ -1,10 +1,22 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "General": ["getting-started"],
+    "Transformations": ["basics", "phases"],
+    "API reference": [
+      "init",
+      "string",
+      "number",
+      "int",
+      "bool",
+      "date",
+      "object",
+      "array",
+      "stringArray",
+      "numberArray",
+      "intArray",
+      "boolArray",
+      "dateArray",
+      "objectArray"
+    ]
   }
 }

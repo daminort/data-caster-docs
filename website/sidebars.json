@@ -16,7 +16,8 @@
       "intArray",
       "boolArray",
       "dateArray",
-      "objectArray"
+      "objectArray",
+      "any"
     ]
   }
 }

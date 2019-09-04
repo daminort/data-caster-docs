@@ -19,6 +19,8 @@ Thank to these operations your client can get as minimal and clean data set as p
 In this way you can adapt both single objects and lists of them:
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 const serverObject = {
   id: '1220',
   name: 'John Snow',

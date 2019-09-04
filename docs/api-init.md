@@ -28,6 +28,8 @@ If you don't need to replace default options you can omit using this method at a
 ## Example
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 const dc = new DataCaster()
   .init({
     forceCamelCase: false,

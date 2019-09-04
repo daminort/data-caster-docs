@@ -26,6 +26,8 @@ So, these fields we can only read, not edit and change. They are some kind of se
 Consider the case in which we need to change, let's say, user's name:
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 // user data from server
 const serverUser = {
   id: 1,

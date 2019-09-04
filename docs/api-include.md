@@ -18,6 +18,8 @@ include(fieldName)
 ## Example
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 // user data from server
 const serverUser = {
   id: 1,

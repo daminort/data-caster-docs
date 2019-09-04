@@ -33,6 +33,8 @@ But, of course, it can be used during adapting phase as well via `ignoreExcluded
 So, you can set your own options by using `init()` method:
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 const dc = new DataCaster()
   .init({
     forceCamelCase: false,
@@ -64,6 +66,8 @@ But all fields you are defining have certain set of properties:
 Example:
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 const serverData = {
   active_status: '-1',
 };
@@ -76,11 +80,13 @@ const dc = new DataCaster()
   });
 
 const result = dc.adapt(serverData);
+```
 
-// result:
-// {
-//   isActive: false,
-// }
+```javascript
+// result
+{
+  isActive: false,
+}
 ```
 
 More examples you can get in the [API reference](api-init) section.

@@ -13,7 +13,7 @@ $ npm install --save @daminort/data-caster
 ## Adapt data from server
 
 ```javascript
-import { DataCaster } from 'data-caster';
+import { DataCaster } from '@daminort/data-caster';
 
 // Let it will data that we receive from server
 const serverData = {

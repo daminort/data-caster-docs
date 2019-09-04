@@ -19,6 +19,8 @@ boolArray(originName, options = {})
 ## Example
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 const dc = new DataCaster()
   .int('id')
   .string('name')

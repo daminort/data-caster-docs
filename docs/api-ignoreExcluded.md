@@ -18,6 +18,8 @@ ignoreExcluded(ignore: Boolean)
 ## Example
 
 ```javascript
+import { DataCaster } from '@daminort/data-caster';
+
 const serverUser = {
   id: 1,
   name: 'John Snow',

@@ -1,17 +1,17 @@
 ---
-id: clearExcluded
-title: clearExcluded
-sidebar_label: clearExcluded
+id: clone
+title: clone
+sidebar_label: clone
 ---
 
-Clears all excluded files in `DataCaster` instance.
+Makes clone of `DataCaster` instance.
 
-> This method is chainable.
+> This method is chainable: it returns the new instance.
 
 ## Signature
 
 ```javascript
-clearExcluded()
+clone()
 ```
 
 ## Example
@@ -19,7 +19,6 @@ clearExcluded()
 ```javascript
 import { DataCaster } from '@daminort/data-caster';
 
-// user data from server
 const serverUser = {
   id: 1,
   name: 'John Snow',
@@ -27,25 +26,21 @@ const serverUser = {
   updatedAt: '2019-09-02T10:45:37',
 };
 
-const dc = new DataCaster()
+const adapter = new DataCaster()
   .int('id')
   .string('name')
   .date('createdAt')
-  .date('updatedAt')
+  .date('updatedAt');
+
+const reverter = adapter
+  .clone()
+  .exclude('createdAt')
+  .exclude('updatedAt');
 	
 // ...
-// somewhere in codebase
-const adapt = (rawData) => dc
-  .clearExcluded()
-  .adapt(rawData);
-
-const revert = (rawData) => dc
-  .exclude('createdAt')
-  .exclude('updatedAt')
-  .revert(rawData);
-
-const clientUser = adapt(serverUser);
-const preparedUser = revert(clientUser);
+// somewhere in codebase 
+const clientUser = adapter.adapt(serverUser);
+const preparedUser = reverter.revert(clientUser);
 ```
 
 ```javascript

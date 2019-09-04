@@ -1,5 +1,7 @@
 # data-caster-docs
-Documentations for Data-Caster Tools
+Documentations for Data-Caster Tools.
+
+The docs are available [here](https://daminort.github.io/data-caster-docs/).
 
 > Note about deployment this documentation on GitHub Pages.
 > When you are using `GIT_USER=<GIT_USER> npm run publish-gh-pages`

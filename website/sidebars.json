@@ -40,6 +40,16 @@
           "clearExcluded",
           "ignoreExcluded"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Processing",
+        "ids": [
+          "adapt",
+          "adaptList",
+          "revert",
+          "revertList"
+        ]
       }
     ]
   }

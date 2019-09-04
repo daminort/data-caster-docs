@@ -95,10 +95,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'The lightweight library that allow you to manage data from server',
+              'The lightweight library that allows you to manage data from server, so you always can be sure that data you use in your components has certain shape and type',
             image: `${baseUrl}img/undraw_web_development.svg`,
             imageAlign: 'left',
-            title: 'Description',
+            title: 'Be sure',
           },
         ]}
       </Block>

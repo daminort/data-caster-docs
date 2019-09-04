@@ -22,7 +22,7 @@ array(originName, options = {})
 const dc = new DataCaster()
   .int('id')
   .string('name')
-  .array('places');
+  .array('places')
   .array('weapons');
 	
 const result = dc.adapt(serverObject);

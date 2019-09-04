@@ -22,7 +22,7 @@ numberArray(originName, options = {})
 const dc = new DataCaster()
   .int('id')
   .string('name')
-  .numberArray('coords');
+  .numberArray('coords')
   .numberArray('positions');
 	
 const result = dc.adapt(serverObject);

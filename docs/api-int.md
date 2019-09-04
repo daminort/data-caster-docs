@@ -22,7 +22,7 @@ int(originName, options = {})
 const dc = new DataCaster()
   .int('id')
   .string('name')
-  .int('age'),
+  .int('age')
   .int('balance');
 	
 const result = dc.adapt(serverObject);

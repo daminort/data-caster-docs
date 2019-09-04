@@ -3,21 +3,43 @@
     "General": ["getting-started"],
     "Transformations": ["basics", "phases"],
     "API reference": [
-      "init",
-      "string",
-      "number",
-      "int",
-      "bool",
-      "date",
-      "object",
-      "array",
-      "stringArray",
-      "numberArray",
-      "intArray",
-      "boolArray",
-      "dateArray",
-      "objectArray",
-      "any"
+      {
+        "type": "subcategory",
+        "label": "Initialization",
+        "ids": [
+          "init"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Rules",
+        "ids": [
+          "string",
+          "number",
+          "int",
+          "bool",
+          "date",
+          "object",
+          "array",
+          "stringArray",
+          "numberArray",
+          "intArray",
+          "boolArray",
+          "dateArray",
+          "objectArray",
+          "any"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Field manipulations",
+        "ids": [
+          "exclude",
+          "include",
+          "clearExcluded",
+          "ignoreExcluded"
+        ]
+      }
     ]
   }
 }

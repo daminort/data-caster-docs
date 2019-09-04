@@ -22,10 +22,10 @@ any(originName, options = {})
 const dc = new DataCaster()
   .int('id')
   .string('name')
-  .any('place'),
-  .any('wins');
-  .any('position');
-  .any('weapon');
+  .any('place')
+  .any('wins')
+  .any('position')
+  .any('weapon')
 	
 const result = dc.adapt(serverObject);
 ```
